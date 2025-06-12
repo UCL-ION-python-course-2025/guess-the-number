@@ -8,14 +8,15 @@ class HiddenNumber:
         0: "Welcome to the Hidden Number game!\n\n"
         "MAKE SURE YOU'VE READ THE README!\n\n"
         "This is the practice round - you can play around here.\n\n"
-        "Enter the hidden number's variable name to see what it is!\n\n"
-        "In future rounds this is disabled. You have to work out the number by performing operations on it.\n\n"
-        "To guess the number use `hidden_num.guess(YOUR_GUESS)`.\n\n"
-        "To move to exercise #1, do `hidden_num = HiddenNumber(1)`. Good luck :)",
+        "In this round, you can simply print 'hidden_num' to see its what the hidden number is.\n\n"
+        "In future rounds, just printing the number is disabled. You have to work out the number by performing operations on it.\n\n"
+        "Once you think you know what the number is, you can guess with `hidden_num.guess(YOUR_GUESS)`.\n\n"
+        "To move to exercise #1, change exercise_number to 1. Good luck :)",
         1: "Round 1: Addition\n\n"
-        "Starting off easy - you've been doing this since you were 4 years old!\n\n"
+        "Starting off easy\n\n"
         "Shockingly, `+` means addition in Python.\n\n"
-        "To guess the number use `hidden_num.guess(YOUR_GUESS)`",
+        "In this round you can add a number to the hidden number to work out what it is\n\n"
+        "Again once you think you know what the hidden number is, you can guess with `hidden_num.guess(YOUR_GUESS)`",
         2: "Round 2: Subtraction\n\n"
         "Be warned, this one is a lot harder than the previous one... subtraction is the opposite of addition!! :O\n\n"
         "And to top it off, `-` means subtract in Python!\n\n"
@@ -29,7 +30,7 @@ class HiddenNumber:
         "`/` is the division symbol. It's like drawing a fraction as `1/2` in maths.\n\n"
         "(You can only use the hidden number as the denominator, e.g. `23 / hidden_num`)",
         6: "Round 6: Exponents\n\n"
-        "`**` is the exponent symbol... don't tell me you've forgotten what an exponent is!\n\n"
+        "`**` is the exponent symbol... \n\n"
         "It's raising a number to a power! So 2 squared is `2 ** 2`. 2 cubed is `2 ** 3`",
         7: "Round 7: Floor Division as Numerator\n\n"
         "`//` is the floor division symbol. What's floor division??\n\n"
@@ -51,10 +52,8 @@ class HiddenNumber:
         "So now you can do `42 % hidden_num`. Unbelievable scenes.",
         11: "Round 11: Less Than & Greater Than\n\n"
         "This is the first expression you're seeing. This means it outputs `True` or `False`.\n\n"
-        "I know what you're thinking: 'Hold your horses, you want to teach 2 operators in one exercise??'\n\n"
-        "Well, you're right. We're taking liberties. It's what we do.\n\n"
         "`<` is the less than operator. E.g. `5 < 6` returns True and `5 < 4` returns False.\n\n"
-        "And... hold on to your hats, you can use `>` too!",
+        "And..., you can use `>` too!",
         12: "Round 12: Less Than or Equal To & Greater Than or Equal To\n\n"
         "`<=` is the less than or equal to operator and `>=` greater than or equal to.\n\n"
         "They work just like the `<` and `>` operators, but they're inclusive.",
@@ -66,8 +65,7 @@ class HiddenNumber:
         "You'd have to check all 100 numbers to get this one right without it...\n\n"
         "So how can we use `for` loops to help figure out what the hidden number is?",
         14: "Round 14: Not Equals To\n\n"
-        "This is the last exercise. It's okay. Stop crying...\n\n"
-        "Really...\n\n"
+        "This is the last exercise. \n\n"
         "This is the opposite of the previous one. `!=` means 'not equal to'.\n\n"
         "E.g. `hidden_num != 6`.\n"
         "Here if `hidden_num` is 6, this will return `False`, otherwise it will return `True`.\n\n"
@@ -250,23 +248,21 @@ class HiddenNumber:
     }
 
     def guess(self, guess):
+        print(f"\nYou guessed: {guess}\n")
         if guess == self._hidden_number:
             message = "Congrats, you're correct!! You guessed right!"
             if self.exercise_number < 14:
                 message += (
-                    f"\n\nEnter: `hidden_num = HiddenNumber({self.exercise_number + 1})` "
-                    f"to the console to play exercise {self.exercise_number + 1}."
+                    f"\n\nChange exercise_number to {self.exercise_number + 1}"
+                    f" to play the next exercise"
                 )
             else:
                 message += (
                     f"\n\nCongrats! You've finished all the exercises! Now an extension activity - write a program"
-                    f" that solves these problems!\n\n"
-                    f"All the Python you've been writing in the console can be written into a file and then you can run that file.\n\n"
-                    f"Write the code in `main.py`, then click `Run` at the top to run it.\n\n"
-                    f"You'll now only see output from `print()` statements in the console. (try just adding `print(22)` to the file and running it)\n\n"
-                    f"Use a `for` loop to change the exercise number and `if` statements"
-                    f"to change what code you run based on which exercise it is!\n"
-                    f"To learn about these, either read `for_loops.md` and `if_else.md` or look at https://app.learney.me/maps/PythonCurriculum?concept=28"
+                    f" that solves all these problems automatically!\n\n"
+                    f"Use a `for` loop to change the exercise number and `if` statements "
+                    f"to change what code you run based on which exercise it is.\n"
+                    f"To learn about these, either read `for_loops.md` and `if_else.md"
                 )
             print(message)
         elif self.exercise_number == 0:

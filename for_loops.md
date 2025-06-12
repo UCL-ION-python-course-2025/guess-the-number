@@ -1,6 +1,5 @@
 ## For Loops
 
-For the final 2 exercises, it'll help to know how to use `for` loops.
 
 Here's an example `for` loop. They're useful to run some code with many possible values.
 We'll dissect the different parts once we understand what it's useful for.
@@ -10,7 +9,7 @@ for item in range(5):
     print(item)
 ```
 
-Outputs the following (try it - you'll need to hit enter twice in the console for this to run):
+Outputs the following:
 ```python3
 0
 1
@@ -22,8 +21,7 @@ Outputs the following (try it - you'll need to hit enter twice in the console fo
 So what happens there?
 
 The code runs the 2nd line, `print(item)`, **5 times**.
-In general, all the indented code below the colon is run
-(for multiple lines being run in a `for` loop, look at the examples).
+In general, all the indented code below the colon is run (for multiple lines being run in a `for` loop, look at the examples).
 
 Each time, `item` is a different number in the range `0` to `4`.
 
@@ -64,7 +62,7 @@ which is below the `for` line.
 
 > Why `0` first? Surely it should be `1` -> `5`, not `0` -> `4`?
 
-Afraid not. Starting with 0 is convention in Python. Just the way it is.
+Starting with 0 is convention in Python.
 So `range(66)` has `66` elements, but the highest is `65`.
 
 ### MOAR EXAMPLES
@@ -155,5 +153,3 @@ This means the code indented below `if` only runs if `(number_to_check // x) == 
 which simply checks whether dividing gives a whole number or not.
 Check out `if_else.md` if you like.
 
-
-Still confused by `for` loops? Learn up to here on the roadmap: (https://app.learney.me/maps/PythonCurriculum?concept=33)

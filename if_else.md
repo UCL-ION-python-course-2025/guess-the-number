@@ -16,7 +16,7 @@ Otherwise, it doesn't do anything.
 
 `if`'s can be followed by `else` statements which run when the `if` is `False`.
 
-```python3
+```python
 if x < 7:
     x = x + 4
 else:
@@ -44,7 +44,7 @@ E.g. `x < 7`
 
 #### 1 - Check if divisible by 2
 
-```python3
+```python
 if x % 2 == 0:
     print("x is even!")
 ```
@@ -55,7 +55,7 @@ If it is, it prints `x is even!`.
 
 We can optionally add an `else` statement here too.
 
-```python3
+```python
 if x % 2 == 0:
     print("x is even!")
 else:
@@ -66,7 +66,7 @@ This will print `x is even!` or `x is odd!` depending on whether it's odd or eve
 
 #### 2 - Checking if a Number is Prime
 
-```python3
+```python
 number_to_check = 2937
 
 # Check if any number 2 -> number_to_check - 1 is a factor
@@ -86,15 +86,15 @@ when it's reached. This stops us from printing `Is not prime!` multiple times.
 
 #### 3 - Running all the rounds of Guess The Number
 
-```python3
+```python
 for round_num in range(1, 14):  # Iterate through 1 -> 14 inclusive
     hidden_num = HiddenNumber(round_num)
 
-    if hidden_num == 1:
+    if round_num == 1:
         ...
-    elif hidden_num == 2:
+    elif round_num == 2:
         ...
-    elif hidden_num == 3:
+    elif round_num == 3:
         ...
     ...
     else:
@@ -104,8 +104,6 @@ for round_num in range(1, 14):  # Iterate through 1 -> 14 inclusive
 Above uses `elif` which is a mix between `else` and `if` and allows
 you to chain together several mutually exclusive conditions.
 
-Here it only checks if `hidden_num == 2` once it's checked that
-`hidden_num == 1` is `False`. More than anything else, this makes
+Here it only checks if `round_num == 2` once it's checked that
+`round_num == 1` is `False`. More than anything else, this makes
 it easier for others to understand your code.
-
-Still confused by `if` statements? Learn up to here on the roadmap: (https://app.learney.me/maps/PythonCurriculum?concept=28)

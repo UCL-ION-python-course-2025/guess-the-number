@@ -56,7 +56,16 @@ hidden_num = HiddenNumber(0)
 print(hidden_num)
 ```
 
-N.B. Lines starting with a `#` are **comments** - these aren't code and **don't run**! E.g.
+
+ Lines starting with a `#` are **comments** - these aren't code and **don't run**! E.g.
 ```python
 # Comments are useful to explain code to others in files :)
 ```
+
+## Further documents
+
+For the final 2 exercises, it'll help to know how to use `for` loops.
+Open `for_loops.md` to learn more about them. Probably it's best to ignore these documents until you get to the final two exercises, as by this point hopefully the basics will make sense.
+
+
+There is also `if_else.md`. This is only needed for the extension exercise. But you will need them at some point in the course, so it's worth reading through this after you've done the exercises.
