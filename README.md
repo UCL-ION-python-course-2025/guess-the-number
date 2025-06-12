@@ -1,3 +1,18 @@
+## Introduction 
+
+Replit is where we will be writing our Python code for this course.
+You should see a file browser on the left hand side.
+
+Open main.py. throughout the course, this is the only file you'll write code in. You can ignore the rest (apart from the .md files which contain instructions).
+
+You will also need the Console. This is where you'll see the output of your code.
+
+I suggest you layout your windows like this. So you can see the code and easily switch between the Console and the README.
+
+![Layout](suggested_layout.png)
+
+
+
 ## Instructions
 
 Work out the hidden number using Python *operators*
