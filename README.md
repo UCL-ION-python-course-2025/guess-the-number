@@ -1,6 +1,9 @@
 ## Introduction 
 
 Replit is where we will be writing our Python code for this course.
+
+Please close all AI assistant windows. They are useful in real life but will prevent you from learning in this course.
+
 You should see a file browser on the left hand side.
 
 Open main.py. throughout the course, this is the only file you'll write code in. You can ignore the rest (apart from the .md files which contain instructions).
