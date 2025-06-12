@@ -14,6 +14,8 @@ If you can't see a Console, click the three dots on the right hand side of the s
 
 I suggest you layout your windows like this. So you can see the code and easily switch between the Console and the README.
 
+Click the run button at the top to run your code!
+
 ![Layout](suggested_layout.png)
 
 
