@@ -6,10 +6,11 @@ chosen randomly between 1 and 100 (inclusive) each round.
 
 **In each exercise you only have some operators available to use!**
 
-To start exercise `1`: (change the number in brackets to change the exercise)
+To start exercise `1`: (change the value of the variable `exercise_number`)
 
 ```python
-hidden_num = HiddenNumber(1)
+exercise_number = 1
+hidden_num = HiddenNumber(exercise_number=exercise_number)
 ```
 
 Here, `hidden_num` (you can call this variable what you like!) is a hidden number
@@ -25,7 +26,7 @@ You don't want to guess randomly - that'll take forever! So for each exercise we
 E.g. this will print out the number 5 higher than the hidden number ;)
 ```python
 new_num = hidden_num + 5
-new_num
+print(new_num)
 ```
 
 **Struggling??** Use this to get a hint!
@@ -42,10 +43,6 @@ x = 7
 ```
 
 To see the value of a variable:
-```python
-x
-```
-or in a file
 ```python
 print(x)
 ```
