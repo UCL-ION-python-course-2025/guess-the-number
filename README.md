@@ -7,6 +7,8 @@ Open main.py. throughout the course, this is the only file you'll write code in.
 
 You will also need the Console. This is where you'll see the output of your code.
 
+If you can't see a Console, click the three dots on the right hand side of the screen. Click "Add Pane" > "Insert Right". Then search "Console" and click it to add it.
+
 I suggest you layout your windows like this. So you can see the code and easily switch between the Console and the README.
 
 ![Layout](suggested_layout.png)
