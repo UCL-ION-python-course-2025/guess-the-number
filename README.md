@@ -2,8 +2,6 @@
 
 Replit is where we will be writing our Python code for this course.
 
-Please close all AI assistant windows. They are useful in real life but will prevent you from learning in this course.
-
 You should see a file browser on the left hand side.
 
 Open main.py. throughout the course, this is the only file you'll write code in. You can ignore the rest (apart from the .md files which contain instructions).
@@ -14,17 +12,54 @@ If you can't see a Console, click the three dots on the right hand side of the s
 
 I suggest you layout your windows like this. So you can see the code and easily switch between the Console and the README.
 
-Click the run button at the top to run your code!
+
+Please close all AI assistant windows. They are useful in real life but will prevent you from learning in this course. Also please turn off AI auto-complete by clicking the small "AI" button on the bottom left of the screen.
+
 
 ![Layout](suggested_layout.png)
 
+Click the run button at the top to run your code!
 
+## General Basics of Code
+
+To set a variable:
+```python
+x = 7
+```
+
+The value of `x` will now be `7` in your code.
+
+
+In python, to see the value of a variable in your code you need to print them. The results of your print statements will be visible in you Console.
+
+```python
+x = 3
+print(x)
+```
+You will see 3 appear in your Console.
+
+ Lines starting with a `#` are **comments** - these aren't code and **don't run**! E.g.
+```python
+# Comments are useful to explain code to others in files :)
+```
 
 ## Instructions
 
+
+In Exercise 0 you can simply print the value of `hidden_num` to see it.
+
+```python
+print(hidden_num)
+```
+
+This functionality is disabled from exercise 1 onwards, otherwise the game wouldn't be much fun!
+
+
+**Exercises 1 onwards**
+
 Work out the hidden number using Python *operators*
 (such as `+`, `-` and `*`) in the Console. The hidden number is
-chosen randomly between 1 and 100 (inclusive) each round.
+chosen randomly between 1 and 100 (inclusiveClick the run button at the top to run your code!) each round.
 
 **In each exercise you only have some operators available to use!**
 
@@ -57,32 +92,6 @@ print(new_num)
 hidden_num.hint()
 ```
 
-## General Basics of Code
-
-To set a variable:
-```python
-x = 7
-```
-
-To see the value of a variable:
-```python
-print(x)
-```
-
-
-You can practice with exercise `0`, where you can see the
-hidden number with the 2nd line below:
-
-```python
-hidden_num = HiddenNumber(0)
-print(hidden_num)
-```
-
-
- Lines starting with a `#` are **comments** - these aren't code and **don't run**! E.g.
-```python
-# Comments are useful to explain code to others in files :)
-```
 
 ## Further documents
 
